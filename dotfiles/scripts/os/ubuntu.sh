@@ -16,6 +16,7 @@ sudo apt install -y vim
 sudo apt install -y tmux
 sudo apt install -y tmuxinator
 sudo apt install -y ctags
+sudo apt install -y exuberant-ctags
 sudo apt install -y cscope
 sudo apt install -y cmake
 sudo apt install -y ninja-build
