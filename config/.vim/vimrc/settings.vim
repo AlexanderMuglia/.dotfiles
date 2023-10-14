@@ -41,6 +41,10 @@ augroup cursorui
   au WinLeave * setlocal nocursorline
 augroup END
 
+" turn on relative line numbers
+set relativenumber
+set rnu
+
 " MacVim
 set guioptions-=r
 set guioptions-=L
