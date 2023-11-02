@@ -27,6 +27,8 @@ cp -rf ../../config/.gdbinit.d ~/
 echo "[+] Setting up kitty"
 mkdir -p ~/.config/kitty/
 cp -rf ../../config/kitty.conf ~/.config/kitty/kitty.conf
+# Setup neofetch
+cp -rf ../../config/neofetchconfig.conf ~/.config/neofetch/config.conf
 
 # Setup i3
 echo "[+] Setting up i3"
@@ -35,9 +37,10 @@ cp -rf ../../config/i3config ~/.config/i3/config
 
 # Get Font
 echo "[+] Setting up Fonts"
+rm -rf ~/.fonts/
 mkdir ~/.fonts/
-curl -o YSF.zip  "https://github.com/supermarin/YosemiteSanFranciscoFont/archive/master.zip" -fsSL
-unzip YSF.zip > /dev/null
+curl -o YSF.zip  "https://github.com/supermarin/YosemiteSanFranciscoFont/archive/master.zip" -fSL
+unzip YSF.zip
 mv ./*/*.ttf ~/.fonts/
 rm -rf ./Y*
 
