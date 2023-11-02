@@ -22,3 +22,13 @@ cp -rf ../../config/.tmuxinator ~/
 echo "[+] Setting up gdb"
 cp -rf ../../config/.gdbinit ~/
 cp -rf ../../config/.gdbinit.d ~/
+
+# Setup kitty
+echo "[+] Setting up kitty"
+mkdir -p ~/.config/kitty/
+cp -rf ../../config/kitty.conf ~/.config/kitty/kitty.conf
+
+# Setup i3
+echo "[+] Setting up i3"
+mkdir -p ~/.config/i3/
+cp -rf ../../config/i3config ~/.config/i3/config

@@ -16,6 +16,8 @@ sudo apt install -y vim
 sudo apt install -y tmux
 sudo apt install -y tmuxinator
 sudo apt install -y i3-wm
+sudo apt install -y nitrogen
+sudo apt install -y dmenu
 sudo apt install -y ctags
 sudo apt install -y exuberant-ctags
 sudo apt install -y cscope
