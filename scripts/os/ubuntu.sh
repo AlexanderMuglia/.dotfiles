@@ -16,6 +16,9 @@ sudo apt install -y vim
 sudo apt install -y tmux
 sudo apt install -y tmuxinator
 sudo apt install -y i3-wm
+# gaps stuff
+sudo apt install -y libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb libxcb1-dev libxcb-xkb-dev libxcb-xinerama0-dev libxcb-randr0-dev libxcb-cursor-dev libxkbcommon-dev libyajl-dev libstartup-notification0-dev libxcb-cffi-dev libxcb-util-dev libx11-xcb-dev libxcb-ewmh-dev libxcb-icccm4
+sudo apt install -y autoconf
 sudo apt install -y nitrogen
 sudo apt install -y dmenu
 sudo apt install -y ctags

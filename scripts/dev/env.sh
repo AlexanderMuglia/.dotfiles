@@ -32,3 +32,12 @@ cp -rf ../../config/kitty.conf ~/.config/kitty/kitty.conf
 echo "[+] Setting up i3"
 mkdir -p ~/.config/i3/
 cp -rf ../../config/i3config ~/.config/i3/config
+
+# Get Font
+echo "[+] Setting up Fonts"
+mkdir ~/.fonts/
+curl -o YSF.zip  "https://github.com/supermarin/YosemiteSanFranciscoFont/archive/master.zip" -fsSL
+unzip YSF.zip > /dev/null
+mv ./*/*.ttf ~/.fonts/
+rm -rf ./Y*
+
