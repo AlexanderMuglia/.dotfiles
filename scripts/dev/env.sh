@@ -34,6 +34,10 @@ cp -rf ../../config/neofetchconfig.conf ~/.config/neofetch/config.conf
 echo "[+] Setting up i3"
 mkdir -p ~/.config/i3/
 cp -rf ../../config/i3config ~/.config/i3/config
+mkdir -p ~/.config/i3blocks/
+git clone https://github.com/vivien/i3blocks-contrib.git
+mv i3blocks-contrib/ ~/.config/i3blocks/scripts/
+cp -rf ../../config/i3blocksconfig ~/.config/i3blocks/config
 
 # Get Font
 echo "[+] Setting up Fonts"
