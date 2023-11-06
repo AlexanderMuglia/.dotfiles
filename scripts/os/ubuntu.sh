@@ -17,6 +17,8 @@ sudo apt install -y tmux
 sudo apt install -y tmuxinator
 sudo apt install -y i3-wm
 sudo apt install -y i3blocks
+sudo apt install -y kitty
+sudo apt install -y compton
 sudo apt install -y autoconf
 sudo apt install -y nitrogen
 sudo apt install -y neofetch
