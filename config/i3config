@@ -189,7 +189,7 @@ bar {
             background #222222
             statusline #ffffff
             separator #666666
-            focused_workspace #fabd2f #fabd2f #333333
+            focused_workspace #77ccff #77ccff #333333
             active_workspace #333333 #333333 #ffffff
             inactive_workspace #333333 #333333 #888888
             urgent_workspace #2f343a #900000 #ffffff
@@ -197,15 +197,18 @@ bar {
 }
 
 # gruvbox bright yellow == #fabd2f
-# gruvbox soft light  == #f2e5bc
-# gruvbox hard dark   == #1d2021
+# gruvbox soft light    == #f2e5bc
+# gruvbox hard dark     == #1d2021
+
+# electric blue         == #77ccff
+# pale blue for text    == #d7e5f0
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #fabd2f #1d2021 #f2e5bc #fabd2f   #fabd2f
-client.focused_inactive #333333 #5f676a #f2e5bc #484e50   #5f676a
+client.focused          #77ccff #1d2021 #d7e5f0 #77ccff   #77ccff
+client.focused_inactive #333333 #5f676a #d7e5f0 #484e50   #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
-client.urgent           #2f343a #900000 #f2e5bc #900000   #900000
-client.placeholder      #000000 #0c0c0c #f2e5bc #000000   #0c0c0c
+client.urgent           #2f343a #900000 #d7e5f0 #900000   #900000
+client.placeholder      #000000 #0c0c0c #d7e5f0 #000000   #0c0c0c
 
 client.background       #ffffff
 

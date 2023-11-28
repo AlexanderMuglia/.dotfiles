@@ -27,6 +27,7 @@ cp -rf ../../config/.gdbinit.d ~/
 echo "[+] Setting up kitty"
 mkdir -p ~/.config/kitty/
 cp -rf ../../config/kitty.conf ~/.config/kitty/kitty.conf
+
 # Setup neofetch
 cp -rf ../../config/neofetchconfig.conf ~/.config/neofetch/config.conf
 

@@ -10,6 +10,7 @@ endif
 " Plugins
 Plugin 'gmarik/Vundle.vim'
 Plugin 'morhetz/gruvbox'
+Plugin 'cocopon/iceberg.vim'
 Plugin 'vim-scripts/a.vim'
 "Plugin 'vim-scripts/c.vim'
 Plugin 'vim-scripts/ccvext.vim'
