@@ -8,6 +8,7 @@ sudo apt install -y htop
 
 echo "[+] Installing network utilities"
 sudo apt install -y ncat
+sudo apt install -y curl
 sudo apt install -y nmap
 sudo apt install -y net-tools
 
