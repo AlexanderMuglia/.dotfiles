@@ -1,0 +1,59 @@
+## COLORSCHEME: gruvbox dark
+set -g default-terminal "screen-256color"
+set-option -g status "on"
+# use vi mode and add vim-like bindings
+set-window-option -g mode-keys vi
+
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+bind P paste-buffer
+
+bind-key -r i run-shell "tmux neww ~/.dotfiles/bin/cht.sh"
+bind-key -T copy-mode-vi 'v' send -X begin-selection
+bind-key -T copy-mode-vi 'y' send -X copy-selection-and-cancel
+
+# default statusbar colors
+# set-option -g status-style bg=colour237,fg=colour223
+set-option -g status-style bg=colour52,fg=colour124
+
+# default window title colors
+set-window-option -g window-status-style bg=default,fg=colour124
+# set-window-option -g window-status-current-style bg=colour214,fg=colour237
+set-window-option -g window-status-current-style bg=colour52,fg=colour2
+set-window-option -g window-status-activity-style bg=colour237,fg=colour28
+
+# pane border
+# set-option -g pane-active-border-style fg=colour223
+set-option -g pane-active-border-style fg=colour52
+set-option -g pane-border-style fg=colour237
+
+
+# message infos
+# set-option -g message-style bg=colour239,fg=colour223
+set-option -g message-style bg=colour52,fg=colour124
+
+# writting commands inactive
+# set-option -g message-command-style bg=colour239,fg=colour223
+set-option -g message-command-style bg=colour239,fg=colour52
+
+# pane number display
+set-option -g display-panes-active-colour colour250
+set-option -g display-panes-colour colour237
+
+# clock
+set-window-option -g clock-mode-colour colour52
+
+# bell
+set-window-option -g window-status-bell-style bg=colour167,fg=colour235
+
+
+## Theme settings mixed with colors (unfortunately, but there is no cleaner way)
+set-option -g status-justify "left"
+set-option -g status-left-length "80"
+set-option -g status-right-length "80"
+set-option -g status-right '[#H] %Y-%m-%d %H:%M:%S'
+
+set-window-option -g window-status-separator ""
+

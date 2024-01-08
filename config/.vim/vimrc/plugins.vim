@@ -11,6 +11,7 @@ endif
 Plugin 'gmarik/Vundle.vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'cocopon/iceberg.vim'
+Plugin 'fcpg/vim-farout'
 Plugin 'vim-scripts/a.vim'
 "Plugin 'vim-scripts/c.vim'
 Plugin 'vim-scripts/ccvext.vim'

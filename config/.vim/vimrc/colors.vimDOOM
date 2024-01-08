@@ -1,0 +1,7 @@
+" Colors
+syntax enable
+set background=dark
+colorscheme farout
+
+" Transparency
+hi Normal guibg=NONE ctermbg=NONE

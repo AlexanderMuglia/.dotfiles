@@ -17,6 +17,8 @@ sudo apt install -y vim
 sudo apt install -y tmux
 sudo apt install -y tmuxinator
 sudo apt install -y i3-wm
+sudo apt install -y policykit-1-gnome
+sudo apt install -y gnome-screenshot
 sudo apt install -y i3blocks
 sudo apt install -y kitty
 sudo apt install -y compton
