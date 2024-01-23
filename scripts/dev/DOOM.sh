@@ -50,3 +50,5 @@ unzip YSF.zip
 mv ./*/*.ttf ~/.fonts/
 rm -rf ./Y*
 
+# Copy edited farout theme into place for more bg transparency
+cp -rf ../../config/farout.vim ~/.vim/bundle/vim-farout/colors/farout.vim
