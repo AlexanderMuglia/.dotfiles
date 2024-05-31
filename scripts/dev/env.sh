@@ -3,12 +3,23 @@
 # Clean up
 rm -rf ~/.vim
 
+# install nvm
+echo "[+] Installing nvm and node (needed for CoC)"
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+nvm install 22
+node -v # should print `v22.2.0`
+npm -v # should print `10.7.0`
+
 # Setup vim
 echo "[+] Setting up vim"
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+# vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+# vundle, removed in favor of vim-plug
+#git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 cp -rf ../../config/.vim ~/
 cp -rf ../../config/.vimrc ~/
-vim -c "PluginInstall" +qall
+vim -c "PlugInstall" +qall
 
 # Setup tmux
 echo "[+] Setting up tmux"
@@ -49,3 +60,4 @@ unzip YSF.zip
 mv ./*/*.ttf ~/.fonts/
 rm -rf ./Y*
 
+vim -c ":CocInstall coc-json coc-tsserver" +qall

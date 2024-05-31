@@ -5,11 +5,15 @@ rm -rf ~/.vim
 
 # Setup vim
 echo "[+] Setting up vim"
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+# vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+# vundle, removed in favor of vim-plug
+# git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 cp -rf ../../config/.vim ~/
 cp -rf ../../config/.vimrc ~/
 mv ~/.vim/vimrc/colors.vimDOOM ~/.vim/vimrc/colors.vim
-vim -c "PluginInstall" +qall
+vim -c "PlugInstall" +qall
 
 # Setup tmux
 echo "[+] Setting up tmux"
@@ -51,4 +55,4 @@ mv ./*/*.ttf ~/.fonts/
 rm -rf ./Y*
 
 # Copy edited farout theme into place for more bg transparency
-cp -rf ../../config/farout.vim ~/.vim/bundle/vim-farout/colors/farout.vim
+cp -rf ../../config/farout.vim ~/.vim/plugged/vim-farout/colors/farout.vim
