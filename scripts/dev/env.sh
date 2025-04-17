@@ -4,11 +4,11 @@
 rm -rf ~/.vim
 
 # install nvm
-echo "[+] Installing nvm and node (needed for CoC)"
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-nvm install 22
-node -v # should print `v22.2.0`
-npm -v # should print `10.7.0`
+# echo "[+] Installing nvm and node (needed for CoC)"
+# curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+# nvm install 22
+# node -v # should print `v22.2.0`
+# npm -v # should print `10.7.0`
 
 # Setup vim
 echo "[+] Setting up vim"
@@ -51,6 +51,11 @@ git clone https://github.com/vivien/i3blocks-contrib.git
 mv i3blocks-contrib/ ~/.config/i3blocks/scripts/
 cp -rf ../../config/i3blocksconfig ~/.config/i3blocks/config
 
+# Setup nvim
+echo "[+] Setting up nvim"
+mkdir -p ~/.config/nvim/
+cp -rf ../../config/nvim ~/.config/nvim
+
 # Get Font
 echo "[+] Setting up Fonts"
 rm -rf ~/.fonts/
@@ -60,4 +65,4 @@ unzip YSF.zip
 mv ./*/*.ttf ~/.fonts/
 rm -rf ./Y*
 
-vim -c ":CocInstall coc-json coc-tsserver" +qall
+# vim -c ":CocInstall coc-json coc-tsserver" +qall

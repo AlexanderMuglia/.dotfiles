@@ -101,5 +101,16 @@ echo "[+] Installing embedded tools"
 brew install arduino-cli
 brew install teensy
 
+echo "[+] Installing nvim"
+brew install nvim
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+# below shouldn't be needed if using Mason
+# language server stuff
+# brew install lua-language-server
+# brew install node
+# npm install -g typescript-language-server typescript
+# npm i -g pyright
+
 echo "[+] Cleaning up Homebrew"
 brew cleanup
